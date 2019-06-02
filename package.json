@@ -1,0 +1,39 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "tic tac toe game is implementated by nodeJs, Socket.io and angular js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darshan Jain",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshu8/tictactoe.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "socket.io",
+    "websockets",
+    "angular",
+    "multiplayer",
+    "multiroom",
+    "game",
+    "bootstrap",
+    "css"
+  ],
+  "bugs": {
+    "url": "https://github.com/darshu8/tictactoe/issues"
+  },
+  "homepage": "https://github.com/darshu8/tictactoe#readme"
+}

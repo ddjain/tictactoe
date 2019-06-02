@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>TIC TAC TOE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/lib/socket.io.js"></script>
+    <script src="css/jquery.min.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/game.css" />
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" style="margin-left: 35%;margin-top:10%;">
+
+        <div class="row" style="margin-bottom: 20px" >
+                <div class="col-lg-2">
+                  <input type="text" class="form-control" placeholder="Enter Room Name" ng-model="roomName">
+                </div>
+
+                <div class="col-lg-1">                  
+                  <button type="button" class="btn btn-primary" ng-click="createRoom()">Create</button>
+                </div>
+
+                <div class="col-lg-1">                  
+                        <button type="button" class="btn btn-primary" ng-Click="joinRoom()">Join</button>
+                </div>
+        </div>
+
+        <!-- <div ng-if="Me && opponanat" class="well" style="width: 20%">
+                        Your :  {{Me}} <br>
+                        Opponant : {{opponanat}} <br>
+                        Turn : {{}}
+        </div> -->
+       
+        <div ng-if="waiting">
+                Waiting for player 2 to join the room.
+        </div>
+
+        <div ng-if="game.turn">
+                It's <span ng-if="game.turn == Me"> Your </span> <span ng-if="game.turn == opponanat"> Opponant </span>  turn now.
+        </div>
+        
+        <div  ng-show="err!=''" class="alert alert-danger">
+                <strong>Error : </strong>{{' '+err}}
+        </div>
+        <div ng-show="success!=''" class="alert alert-success">
+                <strong>Success : </strong>{{' '+success}}
+        </div>
+
+        <!-- <div class="container">
+                <div class="row"  ng-repeat="row in game.board">
+                    <div  class="col-sm-4" ng-repeat= "col in row.column" ng-click ="selectBox(col)">
+                        <img ng-src="{{getImage(col)}}" height="50px" width="50px" ng-if="col.player != 'NONE'">
+                    </div>
+                </div>
+        </div> -->
+
+        <table >
+                <tr  ng-repeat="row in game.board">
+                       <td class="box" height="100px" width="100px" ng-repeat= "col in row.column" ng-click ="selectBox(col)">
+                                <img ng-src="{{getImage(col)}}" height="50px" width="50px" ng-if="col.player != 'NONE'">     
+                        </td>
+                </tr>
+        </table>
+</body>
+</html>

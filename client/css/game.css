@@ -1,0 +1,18 @@
+.col-sm-4{
+    background-color:lavenderblush;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 100px;
+    width: 100px
+
+}
+
+.box{
+    background-color:lavenderblush;
+    border-style: solid;
+    border-color:rgb(250, 232, 238);
+    padding-left:10px;
+    padding-left:10px;
+
+}
+

@@ -1,0 +1,67 @@
+{  
+  "roomName":"",
+  "board": [
+    {
+      "row": 1,
+      "column": [
+        {
+          "colId": 1,
+          "isSelected": false,
+          "player": 
+        },
+        {
+          "colId": 2,
+          "isSelected": false,
+          "player": "NONE"
+        },
+        {
+          "colId": 3,
+          "isSelected": false,
+          "player": "NONE"
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "column": [
+        {
+          "colId": 1,
+          "isSelected": false,
+          "player": "NONE"
+        },
+        {
+          "colId": 2,
+          "isSelected": false,
+          "player": "NONE"
+        },
+        {
+          "colId": 3,
+          "isSelected": false,
+          "player": "NONE"
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "column": [
+        {
+          "colId": 1,
+          "isSelected": false,
+          "player": "NONE"
+        },
+        {
+          "colId": 2,
+          "isSelected": false,
+          "player": "NONE"
+        },
+        {
+          "colId": 3,
+          "isSelected": false,
+          "player": "NONE"
+        }
+      ]
+    }
+  ],
+  "player1": "Darshan",
+  "player2": "Pushpak"
+}
