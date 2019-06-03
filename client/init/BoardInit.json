@@ -1,5 +1,5 @@
 {  
-  "roomName":"",
+"roomName":"",
   "board": [
     {
       "row": 1,
@@ -7,7 +7,7 @@
         {
           "colId": 1,
           "isSelected": false,
-          "player": 
+          "player": "NONE"
         },
         {
           "colId": 2,
@@ -62,6 +62,6 @@
       ]
     }
   ],
-  "player1": "Darshan",
-  "player2": "Pushpak"
+  "player1": "NONE",
+  "player2": "NONE"
 }
