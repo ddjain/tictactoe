@@ -1,4 +1,4 @@
-FROM node:8
+FROM node
 MAINTAINER Darshan Jain
 WORKDIR /usr/src/app
 COPY package.json ./
