@@ -4,7 +4,7 @@ var socket = require('socket.io');
 
 var app = express();
 var rooms = {};
-app.use(express.static('./client'))
+app.use(express.static( __dirname + '/client'))
 
 var server = app.listen(process.env.PORT || 4000, function () {
     console.log("Server started on port 4000 || " + process.env.PORT)
