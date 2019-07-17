@@ -1,10 +1,10 @@
 var express = require('express');
 var socket = require('socket.io');
 
-
+console.log( "App running in " +__dirname)
 var app = express();
 var rooms = {};
-app.use(express.static( __dirname + '/client'))
+app.use(express.static('*/client'))
 
 var server = app.listen(process.env.PORT || 4000, function () {
     console.log("Server started on port 4000 || " + process.env.PORT)
